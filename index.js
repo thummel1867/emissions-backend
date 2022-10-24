@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin: 'https://www.section.io'
+    origin: '*'
 }));
 
 app.get('/', (req, res) => {
